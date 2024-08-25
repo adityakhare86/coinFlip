@@ -1,6 +1,6 @@
 import { COINFLIP_ABI } from "./coinFlipAbi";
 
-export const DEFAULT_THEME = "dark";
+export const DEFAULT_THEME = "light";
 export const WAITFOR_CONFIRMATIONS = 2;
 
 //export const COINFLIP_ADDRESS = "0x6d9AeE60C87f97BF3Cdce3d59C6c6C2e80F301ca"; // VRF v1 on Kovan

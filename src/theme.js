@@ -1,6 +1,6 @@
 const colors = {
   primary: "#13f268",
-  complementary: "#f2139d",
+  complementary: "#a41bbf",
   error: "#bc1232",
   success: "#1ac925",
   light: "#f8ffe8",
