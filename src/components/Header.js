@@ -9,10 +9,16 @@ const Logo = styled.h1`
 `;
 
 const StyledHeader = styled.div`
+  background-color: ${({ theme }) => theme.colors.light};
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: ${({ theme }) => theme.space.m}px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 `;
 
 export const Header = () => (

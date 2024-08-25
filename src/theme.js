@@ -3,9 +3,9 @@ const colors = {
   complementary: "#a41bbf",
   error: "#bc1232",
   success: "#1ac925",
-  light: "#f8ffe8",
-  lighter: "#f5fbe7",
-  lightest: "#ffffff",
+  light: "#ecc7f2",
+  lighter: "#ead5ed",
+  lightest: "#f0e1f2",
   dark: "#262930",
   darker: "#0a0a15",
   darkest: "#050414",
@@ -31,7 +31,7 @@ const space = {
 const fonts = {
   body: "'Work Sans', sans-serif",
   heading: "'Montserrat', sans-serif",
-  logo: "'Fredoka One', cursive",
+  logo: "'Work Sans', sans-serif",
 };
 
 const shared = {
@@ -43,10 +43,10 @@ const shared = {
 
 export const lightTheme = {
   ...shared,
-  background: colors.light,
+  background: colors.lighter,
   text: colors.darker,
   buttonText: colors.lightest,
-  cardBackground: colors.lightest,
+  cardBackground: colors.light,
 };
 
 export const darkTheme = {
