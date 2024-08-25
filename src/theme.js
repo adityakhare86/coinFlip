@@ -47,6 +47,7 @@ export const lightTheme = {
   text: colors.darker,
   buttonText: colors.lightest,
   cardBackground: colors.light,
+  headerBackground: colors.lighter,
 };
 
 export const darkTheme = {
@@ -55,4 +56,5 @@ export const darkTheme = {
   text: colors.lighter,
   buttonText: colors.darker,
   cardBackground: colors.dark,
+  headerBackground: colors.darkest,
 };

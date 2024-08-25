@@ -1,6 +1,5 @@
 import { useWeb3React } from "@web3-react/core";
 import styled from "@emotion/styled";
-import Color from "color";
 
 import { Button } from "./Button";
 import { Eth } from "./Eth";
@@ -15,7 +14,7 @@ const StyledCoin = styled.button`
   width: 7.1rem;
   border-radius: 50%;
   border: 0;
-  background-color: ${({ theme }) => theme.colors.lighter};
+  background-color: ${({ theme }) => theme.cardBackground};
   color: white;
   font-size: 3.3rem;
   display: inline-flex;
@@ -30,7 +29,6 @@ const StyledCoin = styled.button`
 
   &:hover {
     transform: scale(1.1);
-    background-color: ${({ theme }) => Color(theme.colors.lighter).darken(0.2).toString()};
   }
 `;
 

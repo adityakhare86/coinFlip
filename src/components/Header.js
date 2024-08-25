@@ -9,7 +9,7 @@ const Logo = styled.h1`
 `;
 
 const StyledHeader = styled.div`
-  background-color: ${({ theme }) => theme.colors.light};
+  background-color: ${({ theme }) => theme.headerBackground};
   display: flex;
   justify-content: space-between;
   align-items: center;
