@@ -30,16 +30,16 @@ module.exports = {
       chainId: 11155111,
     },
     // Polygon networks
-    polygon: {
-      url: `${process.env.RPC_URL_POLYGON}`,
-      accounts: [privateKey],
-      chainId: 137,
-    },
-    mumbai: {
-      url: `${process.env.RPC_URL_POLYGON_MUMBAI}`,
-      accounts: [privateKey],
-      chainId: 80001,
-    },
+    // polygon: {
+    //   url: `${process.env.RPC_URL_POLYGON}`,
+    //   accounts: [privateKey],
+    //   chainId: 137,
+    // },
+    // mumbai: {
+    //   url: `${process.env.RPC_URL_POLYGON_MUMBAI}`,
+    //   accounts: [privateKey],
+    //   chainId: 80001,
+    // },
   },
   gasReporter: {
     enabled: !!process.env.REPORT_GAS,
@@ -51,9 +51,4 @@ module.exports = {
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },
-  // docgen: {
-  //   path: "./docs",
-  //   clear: true,
-  //   runOnCompile: true,
-  // },
 };
