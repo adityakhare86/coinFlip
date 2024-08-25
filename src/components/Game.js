@@ -8,13 +8,14 @@ import { NumberInput } from "./NumberInput";
 import { useBetResult, useGame } from "../hooks";
 import { useAppContext } from "../AppContext";
 import { ReactComponent as EthereumLogo } from "../ethereumLogo.svg";
+import { ReactComponent as TailsLogo } from "../tailsLogo.svg";
 
 const StyledCoin = styled.button`
   height: 7.1rem;
   width: 7.1rem;
   border-radius: 50%;
   border: 0;
-  background-color: ${({ theme }) => theme.colors.complementary};
+  background-color: ${({ theme }) => theme.colors.lighter};
   color: white;
   font-size: 3.3rem;
   display: inline-flex;
@@ -23,12 +24,13 @@ const StyledCoin = styled.button`
   margin-right: ${({ marginRight, theme }) => (marginRight ? `${theme.space.l}px` : undefined)};
   cursor: pointer;
   outline: 0;
-  translate:
+  transition:
     transform 150ms ease-in-out,
     background-color 150ms ease-in-out;
+
   &:hover {
     transform: scale(1.1);
-    background-color: ${({ theme }) => Color(theme.colors.complementary).darken(0.2).toString()};
+    background-color: ${({ theme }) => Color(theme.colors.lighter).darken(0.2).toString()};
   }
 `;
 
@@ -48,7 +50,7 @@ export const Game = () => {
   return (
     <>
       <h2>Hi, {account.substring(0, 5) + "..." + account.substring(account.length - 5)}</h2>
-      <p>Ready to make some money? Enter the amount to bet and pick your side! Good luck!</p>
+      <p>Choose heads or tails and risk doubling your money or losing it all.</p>
       <p
         style={{
           fontStyle: "italic",
@@ -59,10 +61,13 @@ export const Game = () => {
         Note: the result might take up to a few minutes. Just go grab a coffee and relax, you will get notified once the
         flip is over.
       </p>
-      <p>
-        Account balance: <Eth>{balance}</Eth> <br />
+      <p style={{ fontWeight: 700 }}>
+        Account balance: <Eth>{balance}</Eth>
+      </p>
+      <p style={{ color: "green", fontWeight: 700 }}>
         Your profit: <Eth>{profit}</Eth> {profit && profit !== "0.0" && <Button onClick={collectFunds}>Collect</Button>}
       </p>
+
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         <NumberInput onChange={setBetAmount} value={betAmount} />
         <p
@@ -107,7 +112,11 @@ export const Game = () => {
 };
 
 const TailsCoin = () => {
-  return <StyledCoin>Ξ</StyledCoin>;
+  return (
+    <StyledCoin>
+      <TailsLogo />
+    </StyledCoin>
+  );
 };
 
 const HeadsCoin = () => {

@@ -23,7 +23,7 @@ const StyledHeader = styled.div`
 
 export const Header = () => (
   <StyledHeader>
-    <Logo>CoinFlip - Double up your ETH!</Logo>
+    <Logo>CoinFlip </Logo>
     <ConnectButton />
   </StyledHeader>
 );

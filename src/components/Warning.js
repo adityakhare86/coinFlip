@@ -7,7 +7,7 @@ import { CHAINS, SUPPORTED_CHAINS } from "../data/constants";
 import { useWallet, isValidChainId } from "../hooks";
 
 const StyledWarning = styled.div`
-  background-color: ${({ theme }) => theme.colors.complementary};
+  background-color: ${({ theme }) => theme.colors.light};
   color: ${({ theme }) => theme.colors.darker};
   padding: ${({ theme }) => theme.space.m}px;
   text-align: center;

@@ -25,7 +25,7 @@ const Wrapper = styled.span`
   display: inline-flex;
   margin-bottom: ${({ theme, margin }) => (margin ? theme.space.l : 0)}px;
   &:after {
-    content: "Ξ";
+    content: "ETH";
     display: inline-flex;
     align-items: center;
     position: absolute;
