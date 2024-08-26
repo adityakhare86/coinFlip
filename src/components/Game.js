@@ -53,11 +53,13 @@ export const Game = () => {
         style={{
           fontStyle: "italic",
           fontSize: "0.7em",
+          fontWeight: "500",
           opacity: 0.91,
+          color: "#e04a52",
         }}
       >
-        Note: the result might take up to a few minutes. Just go grab a coffee and relax, you will get notified once the
-        flip is over.
+        Note: The result might take up to a few minutes. Once the transaction is processed, you will soon be notified
+        about the bet results. It's nothing to worry about.
       </p>
       <p style={{ fontWeight: 700 }}>
         Account balance: <Eth>{balance}</Eth>
