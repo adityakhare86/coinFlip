@@ -26,7 +26,7 @@ export const Notifications = () => {
         data.type === "transaction" ? (
           <Transaction key={data.id} {...data} />
         ) : (
-          <Notification key={data.id} hideIn={10000} {...data} />
+          <Notification key={data.id} hideIn={200000} {...data} />
         )
       )}
     </StyledNotificationsWrapper>
